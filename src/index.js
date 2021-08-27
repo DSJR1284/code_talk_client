@@ -5,6 +5,9 @@ import { Provider} from 'react-redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+import { rootReducer } from './reducers/rootReducer'
+import App from './components/App'
+
 
 const  store = createStore(
     rootReducer, 
@@ -12,7 +15,7 @@ const  store = createStore(
 )
 
 ReactDOM.render(
-    <Provider store={store}>
+    <Provider store = {store}>
         <App />
     </Provider>,
     document.getElementById('root')
