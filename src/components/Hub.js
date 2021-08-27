@@ -1,11 +1,11 @@
 import React from 'react'
 
-const App = () => {
+const  Hub = () => {
     return (
         <div>
-            Hello World
+            Hub Page
         </div>
     )
 }
 
-export default App;
+export default Hub;
