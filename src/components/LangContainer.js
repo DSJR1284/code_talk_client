@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux' 
+import { fetchLang }  from '../actions/langaction'
 
 class LangContainer extends Component {
+
+    componentDidMount(){
+        this.props.fetchLang()
+    }
+
 render() {
     return (
         <div>
@@ -10,4 +17,4 @@ render() {
     }
 }
 
-export default LangContainer;
+export default connect(null, {fetchLang})(LangContainer);
