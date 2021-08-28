@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux' 
 import { fetchLang }  from '../actions/langaction'
+import LangForm from './LangForm'
 
 class LangContainer extends Component {
 
@@ -11,7 +12,10 @@ class LangContainer extends Component {
 render() {
     return (
         <div>
-            LangContainer  
+            LangContainer 
+            <h2>Don't See Your Coding Language
+            Please Fill Out The Form Below</h2>
+            <LangForm /> 
         </div>
         )
     }
