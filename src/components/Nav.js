@@ -1,0 +1,24 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom';
+
+const Nav = () => {
+    return (
+        <div className="navbar">
+          <ul> 
+            <NavLink to="/hub" exact >
+            <li>Hub</li>  
+            </NavLink>      
+
+            <NavLink to="/about" exact >
+            <li>About</li>
+            </NavLink>
+
+            <NavLink to="/logout"exact>
+            <li>Log Out</li>
+            </NavLink>
+            </ul>           
+        </div>
+    )
+}
+
+export default Nav;
