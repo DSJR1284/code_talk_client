@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import { addLang } from '../actions/langAction'
+import { addQuestion } from '../actions/questionsAction'
 
-class LangForm extends Component {
+class QuestionForm extends Component {
 
     state = {
-        title: ''
+        title: '',
+        question: ''
        
     }
 
@@ -19,18 +20,20 @@ class LangForm extends Component {
     }
 
     handleSubmit = e => {
-        this.props.addLang(this.state)
+        this.props.addQuestion(this.state)
     }
     
     render() {
         return (            
             <form onSubmit={this.handleSubmit}>
-                <label>Language Title: </label>
+                <label> Title: </label>
                 <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
-                <input type='submit' value="Add New Language"/>
+                <label> Question: </label>
+                <input type='text' value={this.state.question} onChange={this.handleChange} name="question"/>
+                <input type='submit' value="Ask A Question"/>
             </form>           
         )
     }
 }
 
-export default connect(null, {addLang})(LangForm);
+export default connect(null, {addQuestion})(QuestionForm);
