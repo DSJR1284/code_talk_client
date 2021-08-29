@@ -15,6 +15,6 @@ export const addAnswer = (answer) => {
             headers: { 'Content-Type': 'application/json'}
         })
         .then(resp => resp.json())
-        .then(answer => dispatch({ type: 'ADD_ANSWERS', payload: answer}))
+        .then(answer => dispatch({ type: 'ADD_ANSWER', payload: answer}))
     }
 }
