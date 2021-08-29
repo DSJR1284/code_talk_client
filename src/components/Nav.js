@@ -13,6 +13,10 @@ const Nav = () => {
             <li>About</li>
             </NavLink>
 
+            <NavLink to="/lang" exact >
+            <li>Lang</li>
+            </NavLink>
+
             <NavLink to="/logout"exact>
             <li>Log Out</li>
             </NavLink>
