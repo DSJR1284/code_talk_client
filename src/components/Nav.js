@@ -9,9 +9,9 @@ const Nav = () => {
             <li>Home</li>  
             </NavLink>
 
-            <NavLink to="/signup" exact >
+            {/* <NavLink to="/signup" exact >
             <li>Sign Here</li>  
-            </NavLink> 
+            </NavLink>  */}
 
             <NavLink to="/hub" exact >
             <li>Hub</li>  
