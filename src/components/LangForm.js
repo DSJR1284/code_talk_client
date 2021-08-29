@@ -19,15 +19,13 @@ class LangForm extends Component {
     }
 
     handleSubmit = e => {
-        e.preventDefault()
-        // console.log(this.props.addLang)
-         this.props.addLang(this.state)
+        this.props.addLang(this.state)
     }
     
     render() {
         return (            
             <form onSubmit={this.handleSubmit}>
-                <label>Language Title:</label>
+                <label>Language Title: </label>
                 <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
                 <input type='submit' value="Add New Language"/>
             </form>           

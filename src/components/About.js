@@ -5,11 +5,15 @@ const  About = () => {
         <div>
             Welcome To Code Talk. 
             We are all about pushing the dev community foraward 
-            by building one another up no matter where you are in you 
+            by building one another up no matter where you are in your 
             journey. 
-
-            Please feel free to join this community and join the journey as we continue to push our community forward. Happy Coding. 
-
+            <br></br>
+            <br></br>
+            Please feel free to join this community as we continue to push forward to change the world. 
+            <br></br>
+            <br></br>
+            Happy Coding
+            <br></br>
             Code Talk Dev Community. 
         </div>
     )

@@ -19,3 +19,17 @@ export const addLang = (lang) => {
     }
 }
 
+export const deleteLang = (lang) => {
+    console.log(lang)
+    return dispatch => {
+        fetch('http://127.0.0.1:3000/languages', {
+            method: 'DELETE',
+            body: JSON.stringify(lang),
+            headers: { 'Content-Type': 'application/json'}
+        })
+        .then(resp => resp.json())
+        .then(lang => dispatch({ type: 'DELETE_LANG', payload: lang}))
+    }
+}
+
+
