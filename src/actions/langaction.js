@@ -6,4 +6,16 @@ export const fetchLang = () => {
     }
 }
 
-export default fetchLang;
+export const addLang = (lang) => {
+    console.log(lang)
+    return dispatch => {
+        fetch('http://127.0.0.1:3000/languages', {
+            method: 'POST',
+            body: JSON.stringify(lang),
+            headers: { 'Content-Type': 'application/json'}
+        })
+        .then(resp => resp.json())
+        .then(lang => dispatch({ type: 'ADD_LANG', payload: lang}))
+    }
+}
+

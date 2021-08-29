@@ -9,6 +9,7 @@ import About from './About'
 const Router = () => {
     return(
     <Switch>
+        {/* <Route exact path='/login' component={login}/> */}
         <Route exact path='/hub' component={Hub}/>
         <Route exact path='/about' component={About}/>
         {/* <Route exact path='/logout' component={Logout}/> */}
