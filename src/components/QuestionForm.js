@@ -8,7 +8,6 @@ class QuestionForm extends Component {
     state = {
         title: '',
         question: '',
-        language_id: 1,
         user_id: 4       
     }
 

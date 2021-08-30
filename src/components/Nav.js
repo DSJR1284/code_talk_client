@@ -1,10 +1,13 @@
 import React from 'react'
+import SearchBar from './SearchBar'
 import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return (
         <div className="navbar">
+          
           <ul> 
+        <SearchBar className="searchbar" placeholder="Search Question Here" />
           <NavLink to="/" exact >
             <li>Home</li>  
             </NavLink>
@@ -28,6 +31,7 @@ const Nav = () => {
             <NavLink to="/logout"exact>
             <li>Log Out</li>
             </NavLink>
+
             </ul>           
         </div>
     )
