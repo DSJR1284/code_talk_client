@@ -2,7 +2,7 @@ export const fetchQuestion = () => {
     return (dispatch) => {
         fetch('http://127.0.0.1:3000/languages/:id/questions')
         .then(resp => resp.json())
-        .then(question => dispatch({ type: 'FETCH_USER', payload: question}))
+        .then(question => dispatch({ type: 'FETCH_QUESTION', payload: question}))
     }
 }
 

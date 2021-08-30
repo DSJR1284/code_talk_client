@@ -4,7 +4,7 @@ export const usersReducer = (state = [], action) => {
             return action.payload
             case 'ADD_USER':
                 console.log(action.payload)
-            return [...state, action.payload]
+            return [...state, action.payload]            
         default:
             return state 
     }

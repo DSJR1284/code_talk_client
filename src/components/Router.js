@@ -6,6 +6,7 @@ import SignUp from './SignUp'
 // import Login from './login'
 import Hub from './Hub'
 import About from './About'
+import Docs from './Docs'
 import LangList from './LangList'
 // import Logout from './logout'
 
@@ -18,6 +19,7 @@ const Router = () => {
         {/* <Route exact path='/login' component={login}/> */}
         <Route exact path='/hub' component={Hub}/>
         <Route exact path='/about' component={About}/>
+        <Route exact path='/docs' component={Docs}/>
         <Route exact path='/lang' component={LangList}/>
         {/* <Route exact path='/logout' component={Logout}/> */}
     </Switch>

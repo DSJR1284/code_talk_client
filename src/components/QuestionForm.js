@@ -7,8 +7,9 @@ class QuestionForm extends Component {
 
     state = {
         title: '',
-        question: ''
-       
+        question: '',
+        language_id: 1,
+        user_id: 4       
     }
 
     handleChange = e => {
@@ -20,6 +21,8 @@ class QuestionForm extends Component {
     }
 
     handleSubmit = e => {
+        e.preventDefault()
+        console.log(e.target)
         this.props.addQuestion(this.state)
     }
     
@@ -30,6 +33,8 @@ class QuestionForm extends Component {
                 <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
                 <label> Question: </label>
                 <input type='text' value={this.state.question} onChange={this.handleChange} name="question"/>
+                <input type="hidden" defaultValue= {4} onChange={this.handleChange}  name="user_id" />            
+                <input type="hidden" defaultValue={1} onChange={this.handleChange}  name="language_id" />
                 <input type='submit' value="Ask A Question"/>
             </form>           
         )

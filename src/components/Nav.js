@@ -20,10 +20,10 @@ const Nav = () => {
             <NavLink to="/about" exact >
             <li>About</li>
             </NavLink>
-{/* 
-            <NavLink to="/lang" exact >
-            <li>Lang</li>
-            </NavLink> */}
+
+            <NavLink to="/docs" exact >
+            <li>Docs</li>
+            </NavLink>
 
             <NavLink to="/logout"exact>
             <li>Log Out</li>
