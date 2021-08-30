@@ -31,7 +31,7 @@ class AnswerForm extends Component {
         return (            
             <form onSubmit={this.handleSubmit}>
                 <label>Answer: </label>
-                <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
+                <textarea type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
                 <input type="hidden" defaultValue= {2} onChange={this.handleChange}  name="user_id" />            
                 <input type="hidden" defaultValue={1} onChange={this.handleChange}  name="question_id" />
                 <input type='submit' value="Add New Language"/>

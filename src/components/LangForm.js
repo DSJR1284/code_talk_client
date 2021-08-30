@@ -1,36 +1,36 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+// import React, { Component } from 'react'
+// import { connect } from 'react-redux'
 
-import { addLang } from '../actions/langAction'
+// import { addLang } from '../actions/langAction'
 
-class LangForm extends Component {
+// class LangForm extends Component {
 
-    state = {
-        title: ''
+//     state = {
+//         title: ''
        
-    }
+//     }
 
-    handleChange = e => {
-        const {name, value} = e.target 
+//     handleChange = e => {
+//         const {name, value} = e.target 
         
-        this.setState({
-            [name]: value
-        })      
-    }
+//         this.setState({
+//             [name]: value
+//         })      
+//     }
 
-    handleSubmit = e => {
-        this.props.addLang(this.state)
-    }
+//     handleSubmit = e => {
+//         this.props.addLang(this.state)
+//     }
     
-    render() {
-        return (            
-            <form onSubmit={this.handleSubmit}>
-                <label>Language Title: </label>
-                <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
-                <input type='submit' value="Add New Language"/>
-            </form>           
-        )
-    }
-}
+//     render() {
+//         return (            
+//             <form onSubmit={this.handleSubmit}>
+//                 <label>Language Title: </label>
+//                 <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
+//                 <input type='submit' value="Add New Language"/>
+//             </form>           
+//         )
+//     }
+// }
 
-export default connect(null, {addLang})(LangForm);
+// export default connect(null, {addLang})(LangForm);

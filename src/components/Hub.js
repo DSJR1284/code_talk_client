@@ -1,14 +1,15 @@
 import React from 'react'
-import LangContainer from './LangContainer'
+import QAContainer from './QAContainer';
 
 const  Hub = () => {
     return (
         <div>
-            Welcome To Our Code Hub 
-            Please Select A Language To Ask A Question or Answer one for Another Dev
+            Welcome To The Q&A Hub
+            <br></br>
+            Feel free to ask a question or reach out to another dev and help answer one of there's             
             <br></br>
             <br></br> 
-            <LangContainer />
+            <QAContainer />
         </div>
     )
 }

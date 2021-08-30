@@ -28,13 +28,16 @@ class QuestionForm extends Component {
     
     render() {
         return (            
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>                
                 <label> Title: </label>
                 <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
+                <br></br><br></br>
+                <label> Language: </label>
+                <input type='text' value={this.state.language} onChange={this.handleChange} name="language"/>
+                <br></br><br></br>
                 <label> Question: </label>
-                <input type='text' value={this.state.question} onChange={this.handleChange} name="question"/>
+                <textarea type='text' value={this.state.question} onChange={this.handleChange} name="question"/>
                 <input type="hidden" defaultValue= {4} onChange={this.handleChange}  name="user_id" />            
-                <input type="hidden" defaultValue={1} onChange={this.handleChange}  name="language_id" />
                 <input type='submit' value="Ask A Question"/>
             </form>           
         )
