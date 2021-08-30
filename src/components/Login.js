@@ -4,7 +4,7 @@ const  Login = () => {
     return (
         <div>
             Please Login or Sign Up 
-            <> <button onclick="{http://localhost:3000/signup'}">Sign Up</button> </>or
+            <> <button>Sign Up</button> </>or
             <> <button> Login</button> </>           
         </div>
     )

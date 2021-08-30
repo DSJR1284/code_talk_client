@@ -1,13 +1,13 @@
 import React from 'react'
 import Router from './Router'
 import Nav from './Nav'
-
+import './App.css'
 
 const App = () => {
     return (
-        <div>
-            <Nav />            
-            <Router />
+        <div>        
+        <Nav />            
+        <Router />
         </div>
     )
 }

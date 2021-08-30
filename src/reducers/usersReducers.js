@@ -3,7 +3,6 @@ export const usersReducer = (state = [], action) => {
         case 'FETCH_USERS':
             return action.payload
             case 'ADD_USER':
-                console.log(action.payload)
             return [...state, action.payload]            
         default:
             return state 

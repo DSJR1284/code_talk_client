@@ -2,7 +2,7 @@ import React from 'react'
 
 const  Docs = () => {
     return (
-        <div>
+        <div className="docs">
              Welcome To Our Docs Page Below You Will Find A List Of Code Related Doc To Help You On Your Journey
              <br></br><br></br>
            <a target="_blank" rel="noreferrer" href='https://ruby-doc.org/'>Ruby</a>
