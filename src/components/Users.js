@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { useDispatch, connect } from 'react-redux'
-import { addUser } from '../actions/usersAction'
+// import { useDispatch, connect } from 'react-redux'
+// import { addUser } from '../actions/usersAction'
+// import { fetchUsers } from '../actions/usersAction'
 
 
  const Users = ({user}) => {
@@ -20,4 +21,4 @@ const mapStateToProps = state => {
 
 //dispatch -send data and update. 
 
-export default connect(null, {fetchUSERS})(Users);
+export default connect(mapStateToProps)(Users);

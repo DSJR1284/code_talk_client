@@ -6,7 +6,7 @@ import { addAnswer } from '../actions/answersAction'
 class AnswerForm extends Component {
 
     state = {
-        answer: '',
+        response: '',
         question_id: 1,
         user_id: 2  
        
@@ -31,10 +31,10 @@ class AnswerForm extends Component {
         return (            
             <form onSubmit={this.handleSubmit}>
                 <label>Answer: </label>
-                <textarea type='text' value={this.state.title} onChange={this.handleChange} name="title"/>
+                <textarea type='text' value={this.state.response} onChange={this.handleChange} name="response"/>
                 <input type="hidden" defaultValue= {2} onChange={this.handleChange}  name="user_id" />            
                 <input type="hidden" defaultValue={1} onChange={this.handleChange}  name="question_id" />
-                <input type='submit' value="Add New Language"/>
+                <input type='submit' value="Answer Question"/>
             </form>           
         )
     }

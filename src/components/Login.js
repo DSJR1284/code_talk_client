@@ -5,7 +5,7 @@ const  Login = () => {
         <div>
             Please Login or Sign Up 
             <> <button>Sign Up</button> </>or
-            <> <button> Login</button> </>           
+            <> <button>Login</button> </>           
         </div>
     )
 }

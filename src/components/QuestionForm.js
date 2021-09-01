@@ -7,7 +7,7 @@ class QuestionForm extends Component {
 
     state = {
         title: '',
-        question: '',
+        description: '',
         user_id: 4       
     }
 
@@ -34,7 +34,7 @@ class QuestionForm extends Component {
                 <input type='text' value={this.state.language} onChange={this.handleChange} name="language"/>
                 <br></br><br></br>
                 <label> Question: </label>
-                <textarea type='text' value={this.state.question} onChange={this.handleChange} name="question"/>
+                <textarea type='text' value={this.state.description} onChange={this.handleChange} name="description"/>
                 <input type="hidden" defaultValue= {4} onChange={this.handleChange}  name="user_id" />            
                 <input type='submit' value="Ask A Question"/>
             </form>           

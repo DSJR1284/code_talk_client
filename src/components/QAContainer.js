@@ -8,12 +8,12 @@ import Questions from './Questions'
 
 class QAContainer extends Component {
    
-    componentDidMount(){        
+    componentDidMount(){      
         this.props.fetchQuestion()
     }
 
 render() {
-    debugger
+    // debugger
     return (
         <div>
             QA Container          
@@ -24,5 +24,9 @@ render() {
         )
     }
 }
+
+// const mapStateToProps =(state) => {
+//    return {questions: state.question}
+// }
 
 export default connect(null, {fetchQuestion})(QAContainer);
