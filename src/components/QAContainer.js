@@ -6,17 +6,14 @@ import QuestionForm from './QuestionForm'
 import Questions from './Questions'
 
 
-class QAContainer extends Component {
-   
+class QAContainer extends Component {   
     componentDidMount(){      
         this.props.fetchQuestion()
     }
 
 render() {
-    // debugger
     return (
-        <div>
-            QA Container          
+        <div>         
             <QuestionForm /> 
             <AnswersForm />
             <Questions />     
@@ -24,9 +21,5 @@ render() {
         )
     }
 }
-
-// const mapStateToProps =(state) => {
-//    return {questions: state.question}
-// }
 
 export default connect(null, {fetchQuestion})(QAContainer);

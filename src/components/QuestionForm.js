@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
 import { addQuestion } from '../actions/questionsAction'
 
 class QuestionForm extends Component {
@@ -8,7 +7,8 @@ class QuestionForm extends Component {
     state = {
         title: '',
         description: '',
-        user_id: 4       
+        language: '',
+        user_id: 1      
     }
 
     handleChange = e => {
@@ -20,7 +20,6 @@ class QuestionForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        console.log(e.target)
         this.props.addQuestion(this.state)
     }
     

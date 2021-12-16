@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchBar from './SearchBar'
+// import SearchBar from './SearchBar'
 import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
@@ -7,9 +7,9 @@ const Nav = () => {
         <div className="navbar">
           
           <ul> 
-        <SearchBar className="searchbar" placeholder="Search Question Here" />
+        {/* <SearchBar className="searchbar" placeholder="Search Question Here" /> */}
           <NavLink to="/" exact >
-            <li>Home</li>  
+            {/* <li>Home</li>   */}
             </NavLink>
 
             {/* <NavLink to="/signup" exact >
@@ -28,9 +28,9 @@ const Nav = () => {
             <li>Docs</li>
             </NavLink>
 
-            <NavLink to="/logout"exact>
+            {/* <NavLink to="/logout"exact>
             <li>Log Out</li>
-            </NavLink>
+            </NavLink> */}
 
             </ul>           
         </div>

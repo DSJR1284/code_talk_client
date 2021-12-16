@@ -7,15 +7,12 @@ class AnswerForm extends Component {
 
     state = {
         response: '',
-        question_id: 1,
-        user_id: 2  
-       
+        question_id: '',
+        user_id: ''  
     }
 
     handleChange = e => {
-        // console.log(e)
-        const {name, value} = e.target 
-        
+        const {name, value} = e.target     
         this.setState({
             [name]: value
         })      
