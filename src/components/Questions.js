@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchQuestion } from '../actions/questionsAction'
+import AnswersForm from './AnswersForm'
 
 
 const Questions = (props) => { 
@@ -15,8 +16,9 @@ const Questions = (props) => {
                             <li>Language:{question.language}</li>
                             <li>Question:{question.description}</li></ul> 
                             <ol>{question.answers.map(a => 
-                                <li key={a.id}>Answers:
-                                {a.response}</li>)}            
+                                <li key={a.id}>Answers:<br></br>
+                                {a.response}</li>)} 
+                            <AnswersForm />         
                         </ol>
                     </div>
                         </ul>)}
