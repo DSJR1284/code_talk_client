@@ -2,7 +2,7 @@ export const fetchUser = () => {
     return (dispatch) => {
         fetch('http://127.0.0.1:3000/users')
         .then(resp => resp.json())
-        .then(user => dispatch({ type: 'FETCH_USER', payload: user}))
+        .then(users => dispatch({ type: 'FETCH_USER', payload: users}))
     }
 }
 

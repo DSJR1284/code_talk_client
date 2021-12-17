@@ -19,7 +19,7 @@ class QuestionForm extends Component {
     }
 
     handleSubmit = e => {
-        e.preventDefault()
+        // e.preventDefault()
         this.props.addQuestion(this.state)
     }
     

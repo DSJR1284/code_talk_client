@@ -2,7 +2,7 @@ export const fetchAnswers = () => {
     return (dispatch) => {
         fetch('http://127.0.0.1:3000/answers')
         .then(resp => resp.json())
-        .then(answer => dispatch({ type: 'FETCH_ANSWERS', payload: answer}))
+        .then(answers => dispatch({ type: 'FETCH_ANSWERS', payload: answers}))
     }
 }
 
